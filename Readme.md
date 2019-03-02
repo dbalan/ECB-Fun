@@ -17,3 +17,6 @@ dd conv=notrunc if=rc.ppm of=enc.ppm bs=1 count=16
 
 ## There we go
 ![RC out](enc.ppm)
+
+
+_RC logo_ belongs to [Recurse Center](https://recurse.com)
