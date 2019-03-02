@@ -16,7 +16,7 @@ func main() {
 		panic(err)
 	}
 
-	err = ioutil.WriteFile("./enc.body", enc, 0755)
+	err = ioutil.WriteFile("./enc.ppm", enc, 0755)
 	if err != nil {
 		panic(err)
 	}
