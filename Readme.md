@@ -2,7 +2,7 @@
 # How secure is AES-ECB?
 
 ## Here is our input picture!
-![RC In](rc.ppm)
+![RC In](rc.png)
 
 ## Run encrypt tool
 ```
@@ -16,7 +16,9 @@ dd conv=notrunc if=rc.ppm of=enc.ppm bs=1 count=16
 ```
 
 ## There we go
-![RC out](enc.ppm)
+![RC out](enc.png)
 
 
-_RC logo_ belongs to [Recurse Center](https://recurse.com)
+## Notes
+1. _RC logo_ belongs to [Recurse Center](https://recurse.com)
+2. Readme has PNG versions of ppm images created with `convert name.ppm name.png`
