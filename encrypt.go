@@ -10,13 +10,13 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	key := []byte("YELLOW SUBMARINE")
-	enc, err := set2.EncAES128ECB(data, key)
+
+	enc, err := set2.EncAES128ECB(data, []byte("YELLOW SUBMARINE"))
 	if err != nil {
 		panic(err)
 	}
 
-	err = ioutil.WriteFile("./enc.ppm", enc, 0755)
+	err = ioutil.WriteFile("./enc.body", enc, 0755)
 	if err != nil {
 		panic(err)
 	}
